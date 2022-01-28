@@ -1,97 +1,120 @@
-*{
+* {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
 }
 
-header{
+header {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-columns: 1fr 2fr 1fr;
     background-color: black;
     padding: 2vh;
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: center;
 }
-.logo img{
+
+.logo img {
     width: 50px;
 }
 
 
 
-@media only screen and (min-width:100px){
+@media only screen and (min-width:100px) {
 
 
-/* Common Header */
-    .nav{
+    /* Common Header */
+    .nav {
         display: none;
     }
-    .side-menu>p, .logo>p, .cart>p{
+
+    .side-menu>p,
+    .logo>p,
+    .cart>p {
         text-align: center;
         font-weight: bold;
         color: aliceblue;
-        
+
     }
-    .side-menu{
+
+    .side-menu {
         align-self: center;
     }
-    .cart{
+
+    .cart {
         display: flex;
         justify-content: center;
     }
-    .cart img{
-        width:25px;
+
+    .cart img {
+        width: 25px;
         height: 25px;
     }
 
 
-/* Home page layout setup */
-    .lay1,.lay2,.imac,.ipad{
+    /* Home page layout setup */
+    .lay1,
+    .lay2,
+    .imac,
+    .ipad {
         display: grid;
         grid-template-rows: 1fr .1fr .1fr;
         justify-items: center;
         row-gap: 2rem;
     }
-    .button>a>button{
+
+    .button>a>button {
         margin-bottom: 2rem;
         border: none;
         width: 25vw;
         padding: 5%;
         background-color: transparent;
-        border:solid black 2px;
+        border: solid black 2px;
     }
-    .button button:focus { 
+
+    .button button:focus {
         background-color: black;
         color: white;
-     }
-    .iphones-image{
+    }
+
+    .iphones-image {
         width: 60vw;
     }
-    .iphones-image>img,.ipad-image>img,.macbook-image>img,.imacs-image>img{
+
+    .iphones-image>img,
+    .ipad-image>img,
+    .macbook-image>img,
+    .imacs-image>img {
         width: 90%;
     }
-    section{
+
+    section {
         margin: 10vw;
     }
-    .lay3{
+
+    .lay3 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 10px;
     }
-    
-    .imacs-image img{
+
+    .imacs-image img {
         width: 80%;
         margin-left: 10%;
-        
+
     }
-    footer{
+
+    footer {
         background-color: black;
     }
-    footer> h3{
+
+    footer>h3 {
         text-align: center;
         padding: 1rem;
         font-size: 2rem;
@@ -102,45 +125,54 @@ header{
 
 
 
-/* Common CSS for Product List page for every category */
-    .items-list{
+    /* Common CSS for Product List page for every category */
+    .items-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         text-align: center;
     }
-    .products img{
+
+    .products img {
         width: 100%;
     }
-    .lay2-mobile{
+
+    .lay2-mobile {
         display: none;
     }
-    .imacpro img{
+
+    .imacpro img {
         width: 85%;
     }
 
 
-/* Cart Page CSS */
-    .cart-items{
+    /* Cart Page CSS */
+    .cart-items {
         display: grid;
         grid-template-rows: .1fr 1fr .3fr;
         justify-items: center;
         margin: 3.5rem auto;
     }
-    .product-1-quantity p, .product-1-ram p, .product-1-price p, .remove{
+
+    .product-1-quantity p,
+    .product-1-ram p,
+    .product-1-price p,
+    .remove {
         color: gray;
     }
 
-    .products-added{
+    .products-added {
         margin-top: 2vw;
     }
-    .product-1{
+
+    .product-1 {
         display: grid;
         grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
         align-items: center;
         justify-items: center;
     }
-    .product-name{
+
+    .product-name {
         display: grid;
         grid-template-columns: .5fr 2fr;
         width: 100%;
@@ -149,30 +181,35 @@ header{
         column-gap: none;
         grid-column: 1/5;
     }
-    
-    .product-1-ram{
-        order:1;
+
+    .product-1-ram {
+        order: 1;
         grid-column: 2/4;
     }
-    .product-1-price{
+
+    .product-1-price {
         order: 2;
     }
-    .product-1-quantity{
+
+    .product-1-quantity {
         order: 3;
     }
-    .product-1-image>img{
+
+    .product-1-image>img {
         width: 60%;
     }
-    .remove{
+
+    .remove {
         border: none;
         background-color: transparent;
     }
-    .remove>a{
+
+    .remove>a {
         text-decoration: none;
         color: black;
     }
 
-    .cart-price-summary{
+    .cart-price-summary {
         display: flex;
         padding-right: 5vw;
         justify-content: flex-end;
@@ -180,12 +217,13 @@ header{
         align-items: center;
         column-gap: 5vw;
     }
-    .checkout-button{
+
+    .checkout-button {
         display: none;
     }
-    
-    .cart-price-summary button{
-        
+
+    .cart-price-summary button {
+
         background-color: transparent;
         display: block;
         border: 2px solid black;
@@ -193,223 +231,266 @@ header{
         background-color: transparent;
     }
 
-    
-    .fixed-checkout-button{
+
+    .fixed-checkout-button {
         position: fixed;
         width: 100%;
         bottom: 0;
     }
-    .fixed-checkout-button button{
+
+    .fixed-checkout-button button {
         border: none;
         background-color: transparent;
         color: white;
-        margin-left:38vw;
+        margin-left: 38vw;
         padding: 1rem;
     }
 
 
 
-/* Single item product page CSS */
+    /* Single item product page CSS */
 
 
-    .single-item-image>img{
+    .single-item-image>img {
         width: 100%;
     }
-    .single-item-description{
+
+    .single-item-description {
         display: grid;
         grid-template-rows: .1fr .1fr .1fr 1fr;
         row-gap: 2rem;
     }
-    .single-desc{
+
+    .single-desc {
         color: gray;
         font-size: small;
         margin-bottom: 1rem;
     }
-    .single-desc > *{
+
+    .single-desc>* {
         margin-bottom: 10px;
     }
-    .single-desc > h4{
+
+    .single-desc>h4 {
         color: black;
         margin-bottom: 1.5rem;
     }
-    .single-desc > li {
+
+    .single-desc>li {
         margin-left: 3rem;
     }
-    .single-item-size{
+
+    .single-item-size {
         display: grid;
         grid-template-columns: 1fr 7fr;
         align-items: center;
         font-size: small;
         border-bottom: lightgray solid 1px;
     }
-    select, .add-to-cart>button{
+
+    select,
+    .add-to-cart>button {
         border: none;
         background-color: transparent;
         width: 100%;
     }
-    .add-to-cart>button{
+
+    .add-to-cart>button {
         display: none;
     }
 
-    .fixed-add-to-cart{
+    .fixed-add-to-cart {
         position: sticky;
         bottom: 0;
     }
-    .fixed-add-to-cart button{
+
+    .fixed-add-to-cart button {
         border: none;
         background-color: transparent;
         color: white;
-        margin-left:38vw;
+        margin-left: 38vw;
         padding: 1rem;
-        
+
     }
 
 
 
 
-/* Checkout page CSS */
-    .checkout-header{
+    /* Checkout page CSS */
+    .checkout-header {
         text-align: center;
         font-size: smaller;
         margin-top: 3%;
         margin-bottom: 0%;
     }
-    .checkout-info h3, .checkout-info p{
+
+    .checkout-info h3,
+    .checkout-info p {
         font-size: small;
     }
-    .checkout-info input{
+
+    .checkout-info input {
         border: none;
         border-bottom: 2px solid rgb(206, 206, 206);
         padding-bottom: 10px;
         width: 100%;
     }
-    .checkout-info input{
+
+    .checkout-info input {
         font-size: 15px;
     }
-    .checkout-info{
+
+    .checkout-info {
         display: flex;
         flex-direction: column;
         column-gap: 8vw;
         margin: 5vw 3%;
-        
+
     }
 
-    .account-details{
+    .account-details {
         display: flex;
         flex-direction: column;
     }
-    .account-details *, .payment-method *, .order-summary *{
+
+    .account-details *,
+    .payment-method *,
+    .order-summary * {
         margin: 10px 0;
     }
 
-    .state{
+    .state {
         display: flex;
         justify-content: space-between;
         column-gap: 2vw;
     }
-    .state > div{
+
+    .state>div {
         width: 100%;
     }
 
-    .expiry{
+    .expiry {
         display: flex;
         justify-content: space-between;
     }
-    .expiry-date-select{
+
+    .expiry-date-select {
         display: flex;
         flex-direction: column;
-        
+
     }
-    .expiry-date-select div{
+
+    .expiry-date-select div {
         display: flex;
         column-gap: 10px;
     }
-    .expiry-date-select select{
+
+    .expiry-date-select select {
         border-bottom: 2px solid rgb(206, 206, 206);
     }
-    .cvv{
+
+    .cvv {
         margin: 0;
     }
-    .ordered-items{
+
+    .ordered-items {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .ordered-items div{
+
+    .ordered-items div {
         margin: 0;
     }
-    .order-summary h5{
+
+    .order-summary h5 {
         text-align: end;
     }
-    .place-order-div button{
+
+    .place-order-div button {
         display: none;
     }
-    .total{
+
+    .total {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .billing-address>div{
+
+    .billing-address>div {
         display: flex;
-        width:100%;
+        width: 100%;
     }
-    .billing-address input{
+
+    .billing-address input {
         width: 20px;
         margin-right: 10px;
     }
-    .pace-order-bottom{
+
+    .pace-order-bottom {
         position: sticky;
         bottom: 0;
         background-color: black;
     }
-    .pace-order-bottom button{
+
+    .pace-order-bottom button {
         border: none;
         background-color: transparent;
         color: white;
-        margin-left:38vw;
+        margin-left: 38vw;
         padding: 1rem;
     }
 
-    
+
 }
+
 @media only screen and (min-width:566px) {
+
     /* Common Header */
-    .side-menu{
+    .side-menu {
         display: none;
     }
-    .logo{
+
+    .logo {
         grid-column: 2/3;
     }
-    .nav{
+
+    .nav {
         grid-column: 1/4;
         display: flex;
         justify-self: center;
         padding-top: 2vh;
     }
-    nav>a{
+
+    nav>a {
         text-align: center;
         margin-left: 3vw;
         color: white;
         text-decoration: none;
     }
-    .cart{
+
+    .cart {
         justify-content: flex-end;
     }
+
     /* Common CSS for Product List page for every category */
-    section{
+    section {
         margin: 10vw;
     }
-    .button>a>button{
+
+    .button>a>button {
         width: 20vw;
     }
-    .items-list{
+
+    .items-list {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .lay2-mobile{
+
+    .lay2-mobile {
         display: grid;
         justify-content: center;
     }
-    
-    .imacs-page-header img{
+
+    .imacs-page-header img {
         width: 50%;
         margin-left: 25%;
     }
@@ -417,45 +498,51 @@ header{
 
     /* Cart page CSS */
 
-    .product-name{
+    .product-name {
         grid-column: 1;
     }
-    .product-1-ram{
-        
+
+    .product-1-ram {
+
         grid-column: 2;
     }
-    .product-1-remove{
+
+    .product-1-remove {
         order: 4;
     }
-    .checkout-button{
+
+    .checkout-button {
         display: block;
     }
-    .checkout-button button:focus { 
+
+    .checkout-button button:focus {
         background-color: black;
         color: white;
-     }
-    
-    
+    }
+
+
 
 
     /* Single item CSS Page*/
-    .product-page{
+    .product-page {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
-    .add-to-cart>button{
+
+    .add-to-cart>button {
         margin: 10% 0pc;
         width: 150px;
         display: block;
         border: black solid 2px;
         padding: 8px;
     }
-    .add-to-cart button:focus { 
+
+    .add-to-cart button:focus {
         background-color: black;
         color: white;
-     }
-    .fixed-add-to-cart{
+    }
+
+    .fixed-add-to-cart {
         display: none;
     }
 
@@ -466,20 +553,23 @@ header{
 
 
     /* Checkout page CSS */
-    .checkout-header{
+    .checkout-header {
         margin: 5rem auto;
-    }    
-    .checkout-info{
+    }
+
+    .checkout-info {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 8vw;
         margin: 5vw 3%;
-        
-    } 
-    footer{
+
+    }
+
+    footer {
         display: none;
     }
-    .place-order-div button{
+
+    .place-order-div button {
         display: block;
         border: 2px solid gray;
         width: 50%;
@@ -487,12 +577,12 @@ header{
         background-color: transparent;
     }
 
-    .place-order-div button:focus { 
+    .place-order-div button:focus {
         background-color: black;
         color: white;
-     }
+    }
 
-    .billing-address input{
+    .billing-address input {
         width: 20px;
     }
 
@@ -502,54 +592,62 @@ header{
 
 
 @media only screen and (min-width:960px) {
-    
-    .iphones-image>img,.ipad-image>img,.macbook-image>img{
+
+    .iphones-image>img,
+    .ipad-image>img,
+    .macbook-image>img {
         width: 70%;
         margin-left: 15%;
-        
+
     }
 
-    .iphones-image{
+    .iphones-image {
         width: 35vw;
     }
-    .macbook-image{
+
+    .macbook-image {
         width: 60vw;
     }
-    
-    section{
+
+    section {
         margin: 5vw;
     }
-    .button>a>button{
+
+    .button>a>button {
         width: 12vw;
     }
 
 
     /* Cart Page */
-    .your-cart{
+    .your-cart {
         margin-top: 10%;
     }
-    .cart-items{
+
+    .cart-items {
         margin: auto 10%;
     }
-    .checkout-info{
-        
+
+    .checkout-info {
+
         margin: 5vw 15%;
-        
-    } 
-    .checkout-button{
+
+    }
+
+    .checkout-button {
         width: 10vw;
     }
-    .checkout-button button{
+
+    .checkout-button button {
         width: 100%;
     }
-    
+
 
 
     /* Single item description */
-    .single-item-description{
+    .single-item-description {
         margin-right: 10vw;
     }
-    
+
 
 
 }
